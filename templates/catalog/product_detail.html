@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{ product.title }}
+{% endblock %}
+{% block content %}
+  <div class="col d-flex justify-content-center">
+    <div class="card mt-5 border border-warning" style="width: 40rem;">
+      <div class="card-body">
+        {% if product.image %}
+          <a href="{{ product.image.url }}" target="_blank">
+            <img class="border-3 rounded img-fluid img-thumbnail mb-2 mx-auto d-block" src="{{ product.image.url }}">
+          </a>
+          {% else %}
+          <img class="border-3 rounded img-fluid img-thumbnail mb-2 mx-auto d-block" src="{% static 'img/placeholder.jpg' %}" width="400">
+        {% endif %}
+        <h5 class="card-title">{{ product.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            <small style="color:#f2c830;">
+                {{ product.price }} Руб.
+            </small>
+        </h6>
+        <p class="card-text">{{ product.description|linebreaksbr }}</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+    Каталог
+{% endblock %}
+{% block content %}
+    {% for category in categories %}
+    <article class="mt-4">
+        <a href="{% url 'catalog:category_products' category.slug %}" style="text-decoration:None; color:black">
+            <div class="container card border border-warning" style="text-align:center; width: 30rem;">
+                <h4>{{ category.title }}</h4>
+            </div>
+        </a>
+    </article>
+    {% endfor %}
+{% endblock %}

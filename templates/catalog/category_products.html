@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+    Товары в категории {{ category_title }}
+{% endblock %}
+{% block content %}
+    <h2 class="mt-3" style="margin-left:20px;">Товары в категории {{ category_title }}:</h2>
+    {% for product in products %}
+    <article class="mt-4" style="float:left; margin-left:20px">
+        {% include "includes/product_card.html" %}
+    </article>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,188 @@
+[
+    {
+        "model": "catalog.category",
+        "pk": 1,
+        "fields": {
+            "title": "Смартфоны",
+            "slug": "phones"
+        }
+    },
+    {
+        "model": "catalog.category",
+        "pk": 2,
+        "fields": {
+            "title": "Tv",
+            "slug": "Tv"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "title": "Iphone 5s",
+            "description":"Телефон айфон",
+            "price": 40000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "title": "Samsung s300",
+            "description":"Телефон айфон",
+            "price": 40000,
+            "category": 2
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 3,
+        "fields": {
+            "title": "Samsung s200",
+            "description":"Телефон айфон",
+            "price": 120000,
+            "category": 2
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 4,
+        "fields": {
+            "title": "Samsung s100",
+            "description":"Телефон айфон",
+            "price": 130000,
+            "category": 2
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 5,
+        "fields": {
+            "title": "Samsung s400",
+            "description":"Телефон айфон",
+            "price": 20000,
+            "category": 2
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 6,
+        "fields": {
+            "title": "Lg f600",
+            "description":"Телефон айфон",
+            "price": 56000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 7,
+        "fields": {
+            "title": "Honor 8x",
+            "description":"Телефон айфон",
+            "price": 20000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 8,
+        "fields": {
+            "title": "Huawei 7s",
+            "description":"Телефон айфон",
+            "price": 25000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 9,
+        "fields": {
+            "title": "Samsung s900",
+            "description":"Телефон айфон",
+            "price": 150000,
+            "category": 2
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 10,
+        "fields": {
+            "title": "Samsung galaxy note 8",
+            "description":"Телефон айфон",
+            "price": 70000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 11,
+        "fields": {
+            "title": "Samsung galaxy s8",
+            "description":"Телефон айфон",
+            "price": 50000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 12,
+        "fields": {
+            "title": "Philips A6",
+            "description":"Телефон айфон",
+            "price": 15000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 13,
+        "fields": {
+            "title": "Samsung s990",
+            "description":"Телефон айфон",
+            "price": 70000,
+            "category":1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 14,
+        "fields": {
+            "title": "Iphone 8",
+            "description":"Телефон айфон",
+            "price": 35000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 15,
+        "fields": {
+            "title": "iphone x",
+            "description":"Телефон айфон",
+            "price": 60000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 16,
+        "fields": {
+            "title": "Iphone 13",
+            "description":"Телефон айфон",
+            "price": 140000,
+            "category": 1
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 17,
+        "fields": {
+            "title": "sony s200",
+            "description":"Телефон айфон",
+            "price": 90000,
+            "category": 2
+        }
+    }
+]

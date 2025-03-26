@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+    Главная
+{% endblock %}
+{% block content %}
+    <h2 class="mt-3" style="margin-left:20px;">Новинки:</h2>
+    {% for product in page_obj %}
+    <article class="mt-4" style="float:left; margin-left:20px">
+        {% include "includes/product_card.html" %}
+    </article>
+    {% endfor %}
+    <div style="clear: both; padding-top: 3px; margin: 0 auto; width: fit-content;">
+        {% include "includes/paginator.html" %}
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load static %}
+<div class="col d-flex justify-content-center">
+  <div class="card border border-warning" style="width: 30rem;">
+    <div class="card-body">
+      {% if product.image %}
+        <a href="{{ product.image.url }}" target="_blank">
+          <img class="border-3 rounded img-fluid img-thumbnail mb-2 mx-auto d-block" src="{{ product.image.url }}" width="180">
+        </a>
+      {% else %}
+        <img class="border-3 rounded img-fluid img-thumbnail mb-2 mx-auto d-block" src="{% static 'img/placeholder.jpg' %}" width="180">
+      {% endif %}
+      <h5 class="card-title">{{ product.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">
+        <small style="color:#f2c830;">
+          {{ product.price }} Руб.
+        </small>
+      </h6>
+      <a href="{% url 'catalog:product_detail' product.id %}" class="btn btn-warning">Посмотеть товар</a>
+      {% if product.id in cart_products %}
+        <a href="{% url 'users:remove_from_shopping_cart' product.id %}" class="btn btn-danger">Убрать из корзины</a>
+      {% else %}
+        <a href="{% url 'users:add_to_shopping_cart' product.id %}" class="btn btn-warning">В корзину</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
